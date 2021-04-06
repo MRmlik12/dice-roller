@@ -32,7 +32,7 @@ export default class Content extends React.Component<ContentProps, ContentState>
   }
 
   rollDice = () => {
-    if (this.state.isRoll === true) {
+    if (this.state.isRoll) {
       this.setRoll(false);
       clearTimeout(timer);
       return;
